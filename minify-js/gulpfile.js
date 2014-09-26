@@ -1,2 +1,0 @@
-
-var gulp=require('gulp'),jsmin=require('gulp-jsmin'),rename=require('gulp-rename');gulp.task('default',function(){gulp.src('./*.js').pipe(jsmin()).pipe(rename({sufix:'.min'})).pipe(gulp.dest('./'));});gulp.watch('./*.js',['default']);
