@@ -6,7 +6,7 @@
     <title>Modal Box</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,700italic'
 		rel='stylesheet' type='text/css'>
-	<link href='css/done.css' rel='stylesheet' />
+	<link href='fed/css/style.css' rel='stylesheet' />
 </head>
 <body>
 	
@@ -21,7 +21,7 @@
 						 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 336 286"
 						 enable-background="new 0 0 336 286" xml:space="preserve">
 					<image overflow="visible" width="336" height="286"
-					id="little-guru_x5F_one_xA0_Image" xlink:href="images/D7F8CFD85651220D.png" >
+					id="little-guru_x5F_one_xA0_Image" xlink:href="fed/images/little-guru.png" >
 					</image>
 					</svg>
 				</div>
@@ -70,7 +70,7 @@
 			experts who can do the heavy lifting while you focus on stuff that
 			really matters: achieving enlightenment. Or making dinner. Whatever
 			floats your boat.</p>
-				<form class="contact-form" action="/" method="post">
+				<form class="contact-form" action="/playguru-modal-boxes/modal.php" method="post">
 					<div class='columnOne'
 						<label for="fullName">What's your name?</label>
 						<input tabindex="1" type="text" name="fullName" id="fullName"

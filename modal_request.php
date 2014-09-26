@@ -6,7 +6,7 @@
     <title>Modal Box</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,700italic'
 		rel='stylesheet' type='text/css'>
-	<link href='css/done.css' rel='stylesheet' />
+	<link href='fed/css/style.css' rel='stylesheet' />
 </head>
 <body>
 	
@@ -20,7 +20,7 @@
 					<svg class="smart-guru" version="1.1" id="smart-guru_xA0_Image_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 						 x="0px" y="0px" viewBox="0 0 280 298" enable-background="new 0 0 280 298" xml:space="preserve">
 					<image overflow="visible" width="280" height="298"
-id="smart-guru_xA0_Image" xlink:href="images/15600024EC333187.png" >
+id="smart-guru_xA0_Image" xlink:href="fed/images/smart-guru.png" >
 					</image>
 					</svg>
 				</div>
@@ -69,7 +69,7 @@ our website?</p>
 Don't panic. Our Play Gurus are giddy at the prospect of helping you sort it all
 out. Send them your info and they'll get right on it!
 	
-				<form class="contact-form" action="index_request.php" method="post">
+				<form class="contact-form" action="/playguru-modal-boxes/modal_request.php" method="post">
 					<div class='columnOne'
 						<label for="fullName">What's your name?</label>
 						<input tabindex="1" type="text" name="fullName" id="fullName"
