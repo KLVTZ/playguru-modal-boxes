@@ -1,0 +1,33 @@
+/* colors */
+$overlay: black;
+$banner-color: #f75a21;
+$main: #333333;
+$form: #666666;
+$modalCircle: #003040;
+$modalExit: #e2dee2;
+$borderColor: #e1e1e1;
+$successColor: #a4c633;
+
+/* mixins */
+@mixin opacity($percent) {
+	opacity: $percent;
+	-webkit-opacity: $percent;
+	-moz-opacity: $percent;
+	filter: alpha(opacity=$percent);
+}
+@mixin borderRadius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin boxShadowOut($top, $left, $blur, $color) {
+	box-shadow: $top $left $blur $color;
+	-moz-box-shadow: $top $left $blur $color;
+	-webkit-box-shadow: $top $left $blur $color;
+}
+@mixin boxShadowIn($positionX, $positionY, $blur, $spread, $color, $inset:"") {
+	box-shadow: unquote($inset) $positionX $positionY $blur $spread $color;
+	-webkit-box-shadow: unquote($inset) $positionX $positionY $blur $spread $color;
+	-moz-box-shadow: unquote($inset) $positionX $positionY $blur $spread $color;
+}

@@ -1,0 +1,622 @@
+/* 
+ * === Resets and Mixins === 
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 50, ../sass/_reset.scss */
+svg {
+  height: 280px;
+  top: -212px;
+  left: -90px;
+  width: 335px;
+}
+
+/* colors */
+/* mixins */
+/* 
+ * --- Defaults ---
+ */
+/* line 10, ../sass/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/style.scss */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1em/1.5em;
+  min-height: 100%;
+  line-height: 1;
+}
+
+/* line 24, ../sass/style.scss */
+#modal-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=0.8);
+  z-index: 1000;
+}
+
+/* 
+ * === Model Content Wrapper === 
+ */
+/* line 39, ../sass/style.scss */
+#modal-content {
+  color: #333333;
+  display: none;
+  top: 200px;
+  width: 100%;
+  max-width: 442px;
+  height: 100%;
+  min-height: 430px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #eeeeee;
+  z-index: 1000;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 53, ../sass/style.scss */
+#modal-content .banner {
+  color: white;
+  background-color: #f75a21;
+  height: 84px;
+  width: 100%;
+  position: relative;
+}
+/* line 60, ../sass/style.scss */
+#modal-content .banner .info {
+  position: relative;
+  padding: 11px 0 11px 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px -20px 7px -19px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0px -20px 7px -19px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: inset 0px -20px 7px -19px rgba(0, 0, 0, 0.8);
+}
+
+/* 
+ * --- Modal Content: Little Guru  ---
+ */
+/* line 73, ../sass/style.scss */
+#modal-content .banner .info .little-guru {
+  position: relative;
+  width: 43.43891402714932%;
+  /* 192/442 */
+  float: left;
+  color: #f75a21;
+}
+/* line 79, ../sass/style.scss */
+#modal-content .banner .info .little-guru svg {
+  display: block;
+  position: absolute;
+  height: 285px;
+  z-index: 1000;
+  top: -212px;
+  left: -90px;
+}
+/* line 88, ../sass/style.scss */
+#modal-content .banner .info .little-guru .smart-guru {
+  position: absolute;
+  height: 285px;
+  z-index: 1000;
+  top: -212px;
+  left: -83px;
+}
+
+/* 
+ * --- Modal Content: Textual Info  ---
+ */
+/* line 101, ../sass/style.scss */
+#modal-content .banner .info .title-text {
+  width: 40.72398190045249%;
+  /* 180/442 */
+  float: left;
+  font-size: 1.375em;
+  /* 22/16 */
+  line-height: 1em;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+/* line 111, ../sass/style.scss */
+#modal-content .banner .info .title-text span {
+  text-transform: uppercase;
+  font-size: 1.35em;
+  /* 32/16 */
+  line-height: 1.35em;
+}
+/* line 118, ../sass/style.scss */
+#modal-content .banner .info .smart {
+  margin-top: 3px;
+  text-transform: uppercase;
+  font-size: 1.275em;
+}
+/* line 124, ../sass/style.scss */
+#modal-content .banner .info .success {
+  margin-top: 10px;
+}
+/* line 128, ../sass/style.scss */
+#modal-content .banner .info .close-reveal-modal {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  width: 15.83710407239819%;
+  /* 70/442 */
+  height: 100%;
+  float: right;
+  position: relative;
+}
+/* line 135, ../sass/style.scss */
+#modal-content .banner .info .close-reveal-modal .escape {
+  width: 28px;
+  height: 28px;
+  background-color: #003040;
+  color: #e2dee2;
+  text-align: center;
+  font-size: 1.1875em;
+  /*19/16*/
+  line-height: 1.1em;
+  position: absolute;
+  left: 36%;
+  padding: 1px;
+  -webkit-box-shadow: inset 1px 1px rgba(0, 0, 0, 0.2), inset -1px -1px rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+/* line 150, ../sass/style.scss */
+#modal-content .banner .info .close-reveal-modal .escape:hover {
+  cursor: pointer;
+}
+
+/* 
+ * --- Modal Content: Main Content ---
+ */
+/* line 160, ../sass/style.scss */
+#modal-content .main {
+  font-family: Arial;
+  font-size: 0.9375em;
+  line-height: 1.2em;
+  margin: 20px;
+  color: #333333;
+  display: inline-block;
+}
+/* line 168, ../sass/style.scss */
+#modal-content .main .form-description {
+  word-spacing: 0.1em;
+}
+/* line 171, ../sass/style.scss */
+#modal-content .main .form-description p.par-success {
+  font-size: 0.9em;
+}
+/* line 174, ../sass/style.scss */
+#modal-content .main .form-description p + p {
+  margin-top: 12px;
+}
+/* line 177, ../sass/style.scss */
+#modal-content .main .form-description span {
+  font-weight: bold;
+}
+/* line 181, ../sass/style.scss */
+#modal-content .main .form-description .columnOneSuccess {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin: 24px 0 0 0;
+  width: 195px;
+  float: left;
+  color: #222222;
+  position: relative;
+}
+/* line 190, ../sass/style.scss */
+#modal-content .main .form-description .columnOneSuccess .drinking-coffee {
+  height: 148px;
+  width: 100%;
+  padding-left: 12px;
+  background: transparent url(../images/drinking_coffee.jpg) no-repeat center center;
+}
+/* line 196, ../sass/style.scss */
+#modal-content .main .form-description .columnOneSuccess .drinking-coffee .heading {
+  top: 68px;
+  position: absolute;
+}
+/* line 203, ../sass/style.scss */
+#modal-content .main .form-description .columnTwoSuccess {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin: 24px 0 0 0;
+  width: 195px;
+  float: right;
+  color: #222222;
+  position: relative;
+}
+/* line 212, ../sass/style.scss */
+#modal-content .main .form-description .columnTwoSuccess .kids-playing {
+  height: 148px;
+  width: 100%;
+  padding-left: 12px;
+  background: transparent url(../images/kids_playing.jpg) no-repeat center center;
+}
+/* line 218, ../sass/style.scss */
+#modal-content .main .form-description .columnTwoSuccess .kids-playing .heading {
+  top: 68px;
+  position: absolute;
+}
+/* line 225, ../sass/style.scss */
+#modal-content .main .form-description .columnOneSuccess .button,
+#modal-content .main .form-description .columnTwoSuccess .button {
+  font-family: "Lato", Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  line-height: 1em;
+  font-size: 0.75em;
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-weight: 700;
+  background-color: #a4c633;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 0px 12px 12px;
+}
+/* line 242, ../sass/style.scss */
+#modal-content .main .form-description .columnOneSuccess .button:active, #modal-content .main .form-description .columnOneSuccess .button:focus,
+#modal-content .main .form-description .columnTwoSuccess .button:active,
+#modal-content .main .form-description .columnTwoSuccess .button:focus {
+  outline: none;
+  outline: 2px solid white;
+}
+/* line 248, ../sass/style.scss */
+#modal-content .main .form-description .columnOneSuccess .button .circle,
+#modal-content .main .form-description .columnTwoSuccess .button .circle {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  background-color: #003040;
+  text-align: center;
+  padding: 4px 0px 3px 3px;
+  font-size: 1.25em;
+  line-height: 1.255em;
+  -webkit-box-shadow: inset -1px -1px rgba(0, 0, 0, 0.6), inset 1px 1px rgba(255, 255, 255, 0.6);
+  border-radius: 32px;
+}
+/* line 266, ../sass/style.scss */
+#modal-content .main .form-description .bottom-link {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  clear: both;
+  padding-top: 9px;
+}
+/* line 273, ../sass/style.scss */
+#modal-content .main .form-description .bottom-link a {
+  color: #1f1f1f;
+}
+/* line 276, ../sass/style.scss */
+#modal-content .main .form-description .bottom-link a:active, #modal-content .main .form-description .bottom-link a:focus {
+  outline: none;
+  outline: 2px solid white;
+}
+
+/* 
+ * --- Modal Content: Form ---
+ */
+/* line 290, ../sass/style.scss */
+#modal-content .form-description form {
+  margin: 26px 0 0 0;
+  color: #666666;
+}
+/* line 294, ../sass/style.scss */
+#modal-content .form-description form .columnOne {
+  width: 195px;
+  float: left;
+}
+/* line 297, ../sass/style.scss */
+#modal-content .form-description form .columnOne input {
+  width: 100%;
+  font-size: 0.875em;
+  padding: 6px;
+  margin-bottom: 16px;
+  border: 2px solid #e1e1e1;
+}
+/* line 304, ../sass/style.scss */
+#modal-content .form-description form .columnOne input:active, #modal-content .form-description form .columnOne input:focus {
+  outline: none;
+  border: 2px solid white;
+}
+/* line 310, ../sass/style.scss */
+#modal-content .form-description form .columnTwo {
+  width: 195px;
+  float: right;
+}
+/* line 313, ../sass/style.scss */
+#modal-content .form-description form .columnTwo p {
+  width: 155px;
+  margin-bottom: 15px;
+}
+/* line 317, ../sass/style.scss */
+#modal-content .form-description form .columnTwo input[type="checkbox"] {
+  display: none;
+}
+/* line 321, ../sass/style.scss */
+#modal-content .form-description form .columnTwo input[type="checkbox"] + label span {
+  outline: none;
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  margin: -1px 11px 0 0;
+  vertical-align: middle;
+  background: url(../images/checkbox.png) -19px top no-repeat;
+  cursor: pointer;
+}
+/* line 332, ../sass/style.scss */
+#modal-content .form-description form .columnTwo #c2 + label span {
+  width: 25px;
+}
+/* line 336, ../sass/style.scss */
+#modal-content .form-description form .columnTwo input[type="checkbox"] + label {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 4px;
+}
+/* line 341, ../sass/style.scss */
+#modal-content .form-description form .columnTwo input[type="checkbox"]:checked + label span {
+  background: url(../images/checkbox.png) left top no-repeat;
+}
+/* line 345, ../sass/style.scss */
+#modal-content .form-description form .columnTwo input[type="checkbox"]:checked + label {
+  color: #333333;
+}
+/* line 349, ../sass/style.scss */
+#modal-content .form-description form .columnTwo label {
+  font-size: 0.77em;
+}
+/* line 352, ../sass/style.scss */
+#modal-content .form-description form .columnTwo .submitForm {
+  margin-top: 6px;
+  font-family: "Lato", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  width: 196px;
+  height: 50px;
+  color: white;
+  padding: 15px 0px 15px 12px;
+  font-weight: 700;
+  background-color: #f75a21;
+  position: relative;
+  cursor: pointer;
+}
+/* line 367, ../sass/style.scss */
+#modal-content .form-description form .columnTwo .submitForm:active, #modal-content .form-description form .columnTwo .submitForm:focus {
+  outline: none;
+  outline: 2px solid white;
+}
+/* line 372, ../sass/style.scss */
+#modal-content .form-description form .columnTwo .submitForm .circle {
+  position: absolute;
+  right: 8px;
+  top: 9px;
+  height: 32px;
+  width: 32px;
+  background-color: #d44f1e;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  -webkit-box-shadow: inset 1px 1px rgba(0, 0, 0, 0.6), inset -1px -1px rgba(255, 255, 255, 0.6);
+  border-radius: 32px;
+}
+/* line 388, ../sass/style.scss */
+#modal-content .form-description form .columnTwo div.submitForm.getToWork {
+  text-align: center;
+  padding: 8px 36px 0px 0px;
+}
+
+/* --- active will display background and modal --- */
+/* line 396, ../sass/style.scss */
+#modal-background.active, #modal-content.active {
+  display: block;
+}
+
+/* 
+ * === Media Queries === 
+ */
+@media only screen and (max-width: 628px) {
+  /* line 404, ../sass/style.scss */
+  #modal-content .banner .info .little-guru svg {
+    height: 200px;
+    top: -127px;
+    left: -71px;
+  }
+
+  /* line 410, ../sass/style.scss */
+  #modal-content .banner .info .little-guru .smart-guru {
+    height: 200px;
+    top: -127px;
+    left: -71px;
+  }
+}
+@media only screen and (max-width: 488px) {
+  /* line 418, ../sass/style.scss */
+  #modal-content {
+    top: 70px;
+  }
+
+  /* line 421, ../sass/style.scss */
+  #modal-content .banner .info .little-guru svg {
+    height: 160px;
+    top: -87px;
+    left: -70px;
+  }
+
+  /* line 426, ../sass/style.scss */
+  #modal-content .banner .info .little-guru .smart-guru {
+    height: 160px;
+    top: -87px;
+    left: -70px;
+  }
+
+  /* line 431, ../sass/style.scss */
+  #modal-content .banner .info .title-text {
+    font-size: 1.275em;
+    line-height: 1.275em;
+    left: 7px;
+  }
+
+  /* line 436, ../sass/style.scss */
+  #modal-content .main .form-description form .columnOne {
+    width: 100%;
+  }
+
+  /* line 439, ../sass/style.scss */
+  #modal-content .main .form-description form .columnTwo {
+    width: 100%;
+  }
+  /* line 441, ../sass/style.scss */
+  #modal-content .main .form-description form .columnTwo p {
+    width: 100%;
+  }
+  /* line 444, ../sass/style.scss */
+  #modal-content .main .form-description form .columnTwo input[type="checkbox"] + label span {
+    margin-bottom: 11px;
+    width: 20px;
+  }
+  /* line 448, ../sass/style.scss */
+  #modal-content .main .form-description form .columnTwo #c2 + label span {
+    width: 20px;
+  }
+  /* line 452, ../sass/style.scss */
+  #modal-content .main .form-description form .columnTwo .submitForm {
+    width: 100%;
+  }
+  /* line 456, ../sass/style.scss */
+  #modal-content .main .form-description form .columnTwo div.submitForm.getToWork {
+    padding: 16px 16px 0px 0px;
+  }
+
+  /* --- success --- */
+  /* line 462, ../sass/style.scss */
+  #modal-content .main .form-description .columnOneSuccess,
+  #modal-content .main .form-description .columnTwoSuccess {
+    width: 100%;
+  }
+  /* line 465, ../sass/style.scss */
+  #modal-content .main .form-description .columnOneSuccess .button,
+  #modal-content .main .form-description .columnTwoSuccess .button {
+    padding: 18px 0px 12px 12px;
+  }
+}
+@media only screen and (max-width: 442px) {
+  /* line 472, ../sass/style.scss */
+  #modal-content .banner .info .success {
+    font-size: 1.175em;
+    line-height: 1.175em;
+  }
+}
+@media only screen and (max-width: 424px) {
+  /* line 479, ../sass/style.scss */
+  #modal-content .banner .info .smart,
+  #modal-content .banner .info .smart .success {
+    font-size: 1.175em;
+    line-height: 1.175em;
+  }
+}
+@media only screen and (max-width: 395px) {
+  /* line 488, ../sass/style.scss */
+  #modal-content .banner .info .little-guru svg {
+    height: 120px;
+    top: -47px;
+    left: -90px;
+  }
+
+  /* line 493, ../sass/style.scss */
+  #modal-content .banner .info .little-guru .smart-guru {
+    height: 120px;
+    top: -47px;
+    left: -90px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  /* line 501, ../sass/style.scss */
+  #modal-content .banner .info .title-text {
+    font-size: 0.9em;
+    line-height: 0.9em;
+    top: 10px;
+    left: 7px;
+  }
+}
+/* --- ie fix --- */
+@-ms-viewport {
+  zoom: 1.0;
+  width: device-width;
+}
