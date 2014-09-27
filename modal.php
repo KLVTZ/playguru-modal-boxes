@@ -11,10 +11,10 @@
 <body>
 	
 	<button id="modal-launcher">Price Quote Request</button>
-	<div id='modal-background' class="active" <?=(!empty($_POST)) ? "class='active'" : ''?>></div>
-	<div id='modal-content' class="active" <?=(!empty($_POST)) ? "class='active'" : ''?>>
-		<div class='banner'>
-			<div class='info'>
+	<div id='modal-background' class="modal-active" <?=(!empty($_POST)) ? "class='modal-active'" : ''?>></div>
+	<div id='modal-content' class="modal-active" <?=(!empty($_POST)) ?  "class='modal-active'" : ''?>>
+		<div class='modal-banner'>
+			<div class='modal-info'>
 				<div class='little-guru'>
 					guru	
 					<svg version="1.1" id="little-guru_x5F_one_xA0_Image_1_"
@@ -26,52 +26,52 @@
 					</svg>
 				</div>
 				<?php if(!empty($_POST)): ?>
-					<div class='title-text success'><span>success!</span></div>
+					<div class='modal-title-text modal-success'><span>success!</span></div>
 				<?php else: ?>
-					<div class='title-text'>Say hello to your <span>play guru</span></div>
+					<div class='modal-title-text'>Say hello to your <span>play guru</span></div>
 				<?php endif; ?>
 				<div class='close-reveal-modal'>
-					<div class='escape'>x</div>
+					<div class='modal-escape'>x</div>
 				</div>
 			</div>
 		</div>
-		<div class='main'>
-			<div class='form-description'>
+		<div class='modal-main'>
+			<div class='modal-form-description'>
 				<?php if(!empty($_POST)): ?>
-				<p class="par-success"><span>Our Play Gurus are playing rock / paper / scissors to
+				<p class="modal-par-success"><span>Our Play Gurus are playing rock / paper / scissors to
 				see who gets to call you.</span> The winner will be in touch
 				shortly.</p>
 				<p>In the meantime, how about persuing our website?</p> 
-				<div class='columnOneSuccess'>
-					<div class='drinking-coffee'>
-						<div class='heading'>
+				<div class='modal-columnOneSuccess'>
+					<div class='modal-drinking-coffee'>
+						<div class='modal-heading'>
 							<span>Our playgrounds are the best.</span>
 							<p>There. We said it.</p>
 						</div>
 					</div>
-					<a href="#" class='button'>Read up on what makes us better
-							<div class='circle'>&#10140;</div>
+					<a href="#" class='modal-button'>Read up on what makes us better
+							<div class='modal-circle'>&#10140;</div>
 					</a>
 				</div>
-				<div class='columnTwoSuccess'>
-					<div class='kids-playing'>
-						<div class='heading'>
+				<div class='modal-columnTwoSuccess'>
+					<div class='modal-kids-playing'>
+						<div class='modal-heading'>
 							<span>Want to explore your plaground options?</span>
 						</div>
 					</div>
-					<a href="#" class='button'>Check out our product lineup
-							<div class='circle'>&#10140;</div>
+					<a href="#" class='modal-button'>Check out our product lineup
+							<div class='modal-circle'>&#10140;</div>
 					</a>
 				</div>
-				<div class='bottom-link'><a href="#">Return to home</a></div>
+				<div class='modal-bottom-link'><a href="#">Return to home</a></div>
 				<?php else: ?>
 				<p><span>Choosing a playground can feel like all work, no play.
 			How's that for irony?</span> Well, lucky you, we have a team of play
 			experts who can do the heavy lifting while you focus on stuff that
 			really matters: achieving enlightenment. Or making dinner. Whatever
 			floats your boat.</p>
-				<form class="contact-form" action="/playguru-modal-boxes/modal.php" method="post">
-					<div class='columnOne'
+				<form class="modal-contact-form" action="/playguru-modal-boxes/modal.php" method="post">
+					<div class='modal-columnOne'
 						<label for="fullName">What's your name?</label>
 						<input tabindex="1" type="text" name="fullName" id="fullName"
 						placeholder="first and last name..." />
@@ -81,14 +81,14 @@
 						<input tabindex="3" type="tel" name="phone" id="phone"
 						placeholder="enter here..." />
 					</div>
-					<div class='columnTwo'>
+					<div class='modal-columnTwo'>
 						<p>Can we add you to our email list?</p>
 						<input checked="checked" type='checkbox' id="c1" name='cc' value='1' />
 						<label for="c1"><span></span>Yes, i want the inside scoop on sales &amp; more!</label>
 						<input type='checkbox' id="c2" name='cc' value='0' />
 						<label for="c2"><span></span>No thanks, I'm not interested in sales.</label>
-						<div tabindex="6" class='submitForm'>Let's do this!
-							<div class='circle'>&#10140;</div>
+						<div tabindex="6" class='modalSubmitForm'>Let's do this!
+							<div class='modal-circle'>&#10140;</div>
 						</div>
 					</div>
 				</form>

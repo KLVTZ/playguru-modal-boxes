@@ -87,13 +87,13 @@ body {
   box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1); }
-  #modal-content .banner {
+  #modal-content .modal-banner {
     color: white;
     background-color: #f75a21;
     height: 84px;
     width: 100%;
     position: relative; }
-    #modal-content .banner .info {
+    #modal-content .modal-banner .modal-info {
       position: relative;
       padding: 11px 0 11px 0;
       width: 100%;
@@ -105,20 +105,20 @@ body {
 /* 
  * --- Modal Content: Little Guru  ---
  */
-#modal-content .banner .info .little-guru {
+#modal-content .modal-banner .modal-info .little-guru {
   position: relative;
   width: 43.43891%;
   /* 192/442 */
   float: left;
   color: #f75a21; }
-  #modal-content .banner .info .little-guru svg {
+  #modal-content .modal-banner .modal-info .little-guru svg {
     display: block;
     position: absolute;
     height: 285px;
     z-index: 1000;
     top: -212px;
     left: -90px; }
-  #modal-content .banner .info .little-guru .smart-guru {
+  #modal-content .modal-banner .modal-info .little-guru .smart-guru {
     position: absolute;
     height: 285px;
     z-index: 1000;
@@ -128,7 +128,7 @@ body {
 /* 
  * --- Modal Content: Textual Info  ---
  */
-#modal-content .banner .info .title-text {
+#modal-content .modal-banner .modal-info .modal-title-text {
   width: 40.72398%;
   /* 180/442 */
   float: left;
@@ -139,25 +139,25 @@ body {
   text-align: center;
   position: relative;
   display: block; }
-  #modal-content .banner .info .title-text span {
+  #modal-content .modal-banner .modal-info .modal-title-text span {
     text-transform: uppercase;
     font-size: 1.35em;
     /* 32/16 */
     line-height: 1.35em; }
-#modal-content .banner .info .smart {
+#modal-content .modal-banner .modal-info .smart {
   margin-top: 3px;
   text-transform: uppercase;
   font-size: 1.275em; }
-#modal-content .banner .info .success {
+#modal-content .modal-banner .modal-info .modal-success {
   margin-top: 10px; }
-#modal-content .banner .info .close-reveal-modal {
+#modal-content .modal-banner .modal-info .close-reveal-modal {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   width: 15.8371%;
   /* 70/442 */
   height: 100%;
   float: right;
   position: relative; }
-  #modal-content .banner .info .close-reveal-modal .escape {
+  #modal-content .modal-banner .modal-info .close-reveal-modal .modal-escape {
     width: 28px;
     height: 28px;
     background-color: #003040;
@@ -171,28 +171,28 @@ body {
     padding: 1px;
     -webkit-box-shadow: inset 1px 1px rgba(0, 0, 0, 0.2), inset -1px -1px rgba(255, 255, 255, 0.4);
     border-radius: 20px; }
-    #modal-content .banner .info .close-reveal-modal .escape:hover {
+    #modal-content .modal-banner .modal-info .close-reveal-modal .modal-escape:hover {
       cursor: pointer; }
 
 /* 
  * --- Modal Content: Main Content ---
  */
-#modal-content .main {
+#modal-content .modal-main {
   font-family: Arial;
   font-size: 0.9375em;
   line-height: 1.2em;
   margin: 20px;
   color: #333333;
   display: inline-block; }
-  #modal-content .main .form-description {
+  #modal-content .modal-main .modal-form-description {
     word-spacing: 0.1em; }
-    #modal-content .main .form-description p.par-success {
+    #modal-content .modal-main .modal-form-description p.modal-par-success {
       font-size: 0.9em; }
-    #modal-content .main .form-description p + p {
+    #modal-content .modal-main .modal-form-description p + p {
       margin-top: 12px; }
-    #modal-content .main .form-description span {
+    #modal-content .modal-main .modal-form-description span {
       font-weight: bold; }
-    #modal-content .main .form-description .columnOneSuccess {
+    #modal-content .modal-main .modal-form-description .modal-columnOneSuccess {
       font-size: 1.25em;
       line-height: 1.25em;
       margin: 24px 0 0 0;
@@ -200,15 +200,15 @@ body {
       float: left;
       color: #222222;
       position: relative; }
-      #modal-content .main .form-description .columnOneSuccess .drinking-coffee {
+      #modal-content .modal-main .modal-form-description .modal-columnOneSuccess .modal-drinking-coffee {
         height: 148px;
         width: 100%;
         padding-left: 12px;
         background: transparent url(../images/drinking_coffee.jpg) no-repeat center center; }
-        #modal-content .main .form-description .columnOneSuccess .drinking-coffee .heading {
+        #modal-content .modal-main .modal-form-description .modal-columnOneSuccess .modal-drinking-coffee .modal-heading {
           top: 68px;
           position: absolute; }
-    #modal-content .main .form-description .columnTwoSuccess {
+    #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess {
       font-size: 1.25em;
       line-height: 1.25em;
       margin: 24px 0 0 0;
@@ -216,15 +216,15 @@ body {
       float: right;
       color: #222222;
       position: relative; }
-      #modal-content .main .form-description .columnTwoSuccess .kids-playing {
+      #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess .modal-kids-playing {
         height: 148px;
         width: 100%;
         padding-left: 12px;
         background: transparent url(../images/kids_playing.jpg) no-repeat center center; }
-        #modal-content .main .form-description .columnTwoSuccess .kids-playing .heading {
+        #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess .modal-kids-playing .modal-heading {
           top: 68px;
           position: absolute; }
-    #modal-content .main .form-description .columnOneSuccess .button, #modal-content .main .form-description .columnTwoSuccess .button {
+    #modal-content .modal-main .modal-form-description .modal-columnOneSuccess .modal-button, #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess .modal-button {
       font-family: "Lato", Arial, sans-serif;
       text-transform: uppercase;
       text-decoration: none;
@@ -239,10 +239,10 @@ body {
       position: relative;
       cursor: pointer;
       padding: 12px 0px 12px 12px; }
-      #modal-content .main .form-description .columnOneSuccess .button:active, #modal-content .main .form-description .columnOneSuccess .button:focus, #modal-content .main .form-description .columnTwoSuccess .button:active, #modal-content .main .form-description .columnTwoSuccess .button:focus {
+      #modal-content .modal-main .modal-form-description .modal-columnOneSuccess .modal-button:active, #modal-content .modal-main .modal-form-description .modal-columnOneSuccess .modal-button:focus, #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess .modal-button:active, #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess .modal-button:focus {
         outline: none;
         outline: 2px solid white; }
-    #modal-content .main .form-description .columnOneSuccess .button .circle, #modal-content .main .form-description .columnTwoSuccess .button .circle {
+    #modal-content .modal-main .modal-form-description .modal-columnOneSuccess .modal-button .modal-circle, #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess .modal-button .modal-circle {
       position: absolute;
       top: 9px;
       right: 8px;
@@ -255,45 +255,45 @@ body {
       line-height: 1.255em;
       -webkit-box-shadow: inset -1px -1px rgba(0, 0, 0, 0.6), inset 1px 1px rgba(255, 255, 255, 0.6);
       border-radius: 32px; }
-    #modal-content .main .form-description .bottom-link {
+    #modal-content .modal-main .modal-form-description .modal-bottom-link {
       width: 100%;
       text-align: center;
       font-size: 0.8em;
       clear: both;
       padding-top: 9px; }
-      #modal-content .main .form-description .bottom-link a {
+      #modal-content .modal-main .modal-form-description .modal-bottom-link a {
         color: #1f1f1f; }
-        #modal-content .main .form-description .bottom-link a:active, #modal-content .main .form-description .bottom-link a:focus {
+        #modal-content .modal-main .modal-form-description .modal-bottom-link a:active, #modal-content .modal-main .modal-form-description .modal-bottom-link a:focus {
           outline: none;
           outline: 2px solid white; }
 
 /* 
  * --- Modal Content: Form ---
  */
-#modal-content .form-description form {
+#modal-content .modal-form-description .modal-contact-form {
   margin: 26px 0 0 0;
   color: #666666; }
-  #modal-content .form-description form .columnOne {
+  #modal-content .modal-form-description .modal-contact-form .modal-columnOne {
     width: 195px;
     float: left; }
-    #modal-content .form-description form .columnOne input {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnOne input {
       width: 100%;
       font-size: 0.875em;
       padding: 6px;
       margin-bottom: 16px;
       border: 2px solid #e1e1e1; }
-      #modal-content .form-description form .columnOne input:active, #modal-content .form-description form .columnOne input:focus {
+      #modal-content .modal-form-description .modal-contact-form .modal-columnOne input:active, #modal-content .modal-form-description .modal-contact-form .modal-columnOne input:focus {
         outline: none;
         border: 2px solid white; }
-  #modal-content .form-description form .columnTwo {
+  #modal-content .modal-form-description .modal-contact-form .modal-columnTwo {
     width: 195px;
     float: right; }
-    #modal-content .form-description form .columnTwo p {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo p {
       width: 155px;
       margin-bottom: 15px; }
-    #modal-content .form-description form .columnTwo input[type="checkbox"] {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo input[type="checkbox"] {
       display: none; }
-    #modal-content .form-description form .columnTwo input[type="checkbox"] + label span {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo input[type="checkbox"] + label span {
       outline: none;
       display: inline-block;
       width: 30px;
@@ -302,20 +302,20 @@ body {
       vertical-align: middle;
       background: url(../images/checkbox.png) -19px top no-repeat;
       cursor: pointer; }
-    #modal-content .form-description form .columnTwo #c2 + label span {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo #c2 + label span {
       width: 25px; }
-    #modal-content .form-description form .columnTwo input[type="checkbox"] + label {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo input[type="checkbox"] + label {
       display: -webkit-inline-flex;
       display: -ms-inline-flexbox;
       display: inline-flex;
       margin-bottom: 4px; }
-    #modal-content .form-description form .columnTwo input[type="checkbox"]:checked + label span {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo input[type="checkbox"]:checked + label span {
       background: url(../images/checkbox.png) left top no-repeat; }
-    #modal-content .form-description form .columnTwo input[type="checkbox"]:checked + label {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo input[type="checkbox"]:checked + label {
       color: #333333; }
-    #modal-content .form-description form .columnTwo label {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo label {
       font-size: 0.77em; }
-    #modal-content .form-description form .columnTwo .submitForm {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo .modalSubmitForm {
       margin-top: 6px;
       font-family: "Lato", Arial, sans-serif;
       text-transform: uppercase;
@@ -328,10 +328,10 @@ body {
       background-color: #f75a21;
       position: relative;
       cursor: pointer; }
-      #modal-content .form-description form .columnTwo .submitForm:active, #modal-content .form-description form .columnTwo .submitForm:focus {
+      #modal-content .modal-form-description .modal-contact-form .modal-columnTwo .modalSubmitForm:active, #modal-content .modal-form-description .modal-contact-form .modal-columnTwo .modalSubmitForm:focus {
         outline: none;
         outline: 2px solid white; }
-      #modal-content .form-description form .columnTwo .submitForm .circle {
+      #modal-content .modal-form-description .modal-contact-form .modal-columnTwo .modalSubmitForm .modal-circle {
         position: absolute;
         right: 8px;
         top: 9px;
@@ -343,7 +343,7 @@ body {
         line-height: 1.25em;
         -webkit-box-shadow: inset 1px 1px rgba(0, 0, 0, 0.6), inset -1px -1px rgba(255, 255, 255, 0.6);
         border-radius: 32px; }
-    #modal-content .form-description form .columnTwo div.submitForm.getToWork {
+    #modal-content .modal-form-description .modal-contact-form .modal-columnTwo div.modalSubmitForm.getToWork {
       text-align: center;
       padding: 8px 36px 0px 0px; }
 
@@ -355,11 +355,11 @@ body {
  * === Media Queries === 
  */
 @media only screen and (max-width: 628px) {
-  #modal-content .banner .info .little-guru svg {
+  #modal-content .modal-banner .modal-info .little-guru svg {
     height: 200px;
     top: -127px;
     left: -71px; }
-  #modal-content .banner .info .little-guru .smart-guru {
+  #modal-content .modal-banner .modal-info .little-guru .smart-guru {
     height: 200px;
     top: -127px;
     left: -71px; } }
@@ -368,60 +368,60 @@ body {
   /* --- success --- */
   #modal-content {
     top: 70px; }
-  #modal-content .banner .info .little-guru svg {
+  #modal-content .modal-banner .modal-info .little-guru svg {
     height: 160px;
     top: -87px;
     left: -70px; }
-  #modal-content .banner .info .little-guru .smart-guru {
+  #modal-content .modal-banner .modal-info .little-guru .smart-guru {
     height: 160px;
     top: -87px;
     left: -70px; }
-  #modal-content .banner .info .title-text {
+  #modal-content .modal-banner .modal-info .modal-title-text {
     font-size: 1.275em;
     line-height: 1.275em;
     left: 7px; }
-  #modal-content .main .form-description form .columnOne {
+  #modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnOne {
     width: 100%; }
-  #modal-content .main .form-description form .columnTwo {
+  #modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnTwo {
     width: 100%; }
-    #modal-content .main .form-description form .columnTwo p {
+    #modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnTwo p {
       width: 100%; }
-    #modal-content .main .form-description form .columnTwo input[type="checkbox"] + label span {
+    #modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnTwo input[type="checkbox"] + label span {
       margin-bottom: 11px;
       width: 20px; }
-    #modal-content .main .form-description form .columnTwo #c2 + label span {
+    #modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnTwo #c2 + label span {
       width: 20px; }
-    #modal-content .main .form-description form .columnTwo .submitForm {
+    #modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnTwo .modalSubmitForm {
       width: 100%; }
-    #modal-content .main .form-description form .columnTwo div.submitForm.getToWork {
+    #modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnTwo div.modalSubmitForm.getToWork {
       padding: 16px 16px 0px 0px; }
-  #modal-content .main .form-description .columnOneSuccess, #modal-content .main .form-description .columnTwoSuccess {
+  #modal-content .modal-main .modal-form-description .modal-columnOneSuccess, #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess {
     width: 100%; }
-    #modal-content .main .form-description .columnOneSuccess .button, #modal-content .main .form-description .columnTwoSuccess .button {
+    #modal-content .modal-main .modal-form-description .modal-columnOneSuccess .modal-button, #modal-content .modal-main .modal-form-description .modal-columnTwoSuccess .modal-button {
       padding: 18px 0px 12px 12px; } }
 
 @media only screen and (max-width: 442px) {
-  #modal-content .banner .info .success {
+  #modal-content .modal-banner .modal-info .modal-success {
     font-size: 1.175em;
     line-height: 1.175em; } }
 
 @media only screen and (max-width: 424px) {
-  #modal-content .banner .info .smart, #modal-content .banner .info .smart .success {
+  #modal-content .modal-banner .modal-info .smart, #modal-content .modal-banner .modal-info .smart .modal-success {
     font-size: 1.175em;
     line-height: 1.175em; } }
 
 @media only screen and (max-width: 395px) {
-  #modal-content .banner .info .little-guru svg {
+  #modal-content .modal-banner .modal-info .little-guru svg {
     height: 120px;
     top: -47px;
     left: -90px; }
-  #modal-content .banner .info .little-guru .smart-guru {
+  #modal-content .modal-banner .modal-info .little-guru .smart-guru {
     height: 120px;
     top: -47px;
     left: -90px; } }
 
 @media only screen and (max-width: 370px) {
-  #modal-content .banner .info .title-text {
+  #modal-content .modal-banner .modal-info .modal-title-text {
     font-size: 0.9em;
     line-height: 0.9em;
     top: 10px;

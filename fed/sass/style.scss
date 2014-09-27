@@ -50,14 +50,14 @@ body {
 	z-index: 1000;
 	@include boxShadowOut(-2px, 2px, 2px, rgba(0,0,0,0.1));
 
-	.banner {
+	.modal-banner {
 		color: white;
 		background-color: $banner-color;
 		height: 84px;
 		width: 100%;
 		position: relative;
 
-		.info {
+		.modal-info {
 			position: relative;
 			padding: 11px 0 11px 0;
 			width: 100%;
@@ -70,7 +70,7 @@ body {
 /* 
  * --- Modal Content: Little Guru  ---
  */
-#modal-content .banner .info .little-guru {
+#modal-content .modal-banner .modal-info .little-guru {
 	position: relative;
 	width: 43.43891402714932%; /* 192/442 */
 	float: left;
@@ -97,8 +97,8 @@ body {
 /* 
  * --- Modal Content: Textual Info  ---
  */
-#modal-content .banner .info {
-	.title-text {
+#modal-content .modal-banner .modal-info {
+	.modal-title-text {
 		width: 40.72398190045249%; /* 180/442 */
 		float: left;
 		font-size: 1.375em; /* 22/16 */
@@ -121,7 +121,7 @@ body {
 		font-size: 1.275em;
 	}
 
-	.success {
+	.modal-success {
 		margin-top: 10px;
 	}
 
@@ -132,7 +132,7 @@ body {
 		float: right;
 		position: relative;
 
-		.escape {
+		.modal-escape {
 			width: 28px;
 			height: 28px;
 			background-color: $modalCircle;
@@ -157,7 +157,7 @@ body {
 /* 
  * --- Modal Content: Main Content ---
  */
-#modal-content .main {
+#modal-content .modal-main {
 	font-family: Arial;
 	font-size: 0.9375em;
 	line-height: 1.2em;
@@ -165,10 +165,10 @@ body {
 	color: $main;
 	display: inline-block;
 
-	.form-description {
+	.modal-form-description {
 		word-spacing: 0.1em;
 
-		p.par-success {
+		p.modal-par-success {
 			font-size: 0.9em;
 		}
 		p+ p {
@@ -178,7 +178,7 @@ body {
 			font-weight: bold;
 		}
 
-		.columnOneSuccess {
+		.modal-columnOneSuccess {
 			font-size: 1.25em;
 			line-height: 1.25em;
 			margin: 24px 0 0 0;
@@ -187,20 +187,20 @@ body {
 			color: #222222;
 			position: relative;
 
-			.drinking-coffee {
+			.modal-drinking-coffee {
 				height:148px;
 				width: 100%;
 				padding-left: 12px;
 				background: transparent url(../images/drinking_coffee.jpg) no-repeat center center;
 
-				.heading {
+				.modal-heading {
 					top: 68px;
 					position: absolute;
 				}
 			}
 		}
 
-		.columnTwoSuccess {
+		.modal-columnTwoSuccess {
 			font-size: 1.25em;
 			line-height: 1.25em;
 			margin: 24px 0 0 0;
@@ -209,21 +209,21 @@ body {
 			color: #222222;
 			position: relative;
 
-			.kids-playing {
+			.modal-kids-playing {
 				height:148px;
 				width: 100%;
 				padding-left: 12px;
 				background: transparent url(../images/kids_playing.jpg) no-repeat center center;
 
-				.heading {
+				.modal-heading {
 					top: 68px;
 					position: absolute;
 				}
 			}
 		}
 
-		.columnOneSuccess .button,
-		.columnTwoSuccess .button {
+		.modal-columnOneSuccess .modal-button,
+		.modal-columnTwoSuccess .modal-button {
 			font-family: "Lato", Arial, sans-serif;
 			text-transform: uppercase;
 			text-decoration: none;
@@ -245,8 +245,8 @@ body {
 			}
 		}
 
-		.columnOneSuccess .button .circle,
-		.columnTwoSuccess .button .circle { 
+		.modal-columnOneSuccess .modal-button .modal-circle,
+		.modal-columnTwoSuccess .modal-button .modal-circle { 
 			position: absolute;
 			top: 9px;
 			right: 8px;
@@ -263,7 +263,7 @@ body {
 			@include borderRadius(32px);
 		}
 
-		.bottom-link {
+		.modal-bottom-link {
 			width: 100%;
 			text-align: center;
 			font-size: 0.8em;
@@ -287,11 +287,11 @@ body {
 /* 
  * --- Modal Content: Form ---
  */
-#modal-content .form-description form {
+#modal-content .modal-form-description .modal-contact-form {
 	margin: 26px 0 0 0;
 	color: $form;
 
-	.columnOne {
+	.modal-columnOne {
 		width: 195px;
 		float:left;
 		input {
@@ -307,7 +307,7 @@ body {
 			}
 		}
 	}
-	.columnTwo {
+	.modal-columnTwo {
 		width: 195px;
 		float:right;
 		p {
@@ -349,7 +349,7 @@ body {
 		label {
 			font-size: 0.77em;
 		}
-		.submitForm {
+		.modalSubmitForm {
 			margin-top: 6px;
 			font-family: "Lato", Arial, sans-serif;
 			text-transform: uppercase;
@@ -369,7 +369,7 @@ body {
 				outline: 2px solid white;
 			}
 
-			.circle {
+			.modal-circle {
 				position: absolute;
 				right: 8px;
 				top: 9px;
@@ -385,7 +385,7 @@ body {
 				@include borderRadius(32px);
 			}
 		}
-		div.submitForm.getToWork {
+		div.modalSubmitForm.getToWork {
 			text-align: center;
 			padding: 8px 36px 0px 0px;
 		}
@@ -401,13 +401,13 @@ body {
  * === Media Queries === 
  */
 @media only screen and (max-width: 628px) {
-	#modal-content .banner .info .little-guru svg {
+	#modal-content .modal-banner .modal-info .little-guru svg {
 		height: 200px;
 		top: -127px;
 		left: -71px;
 	}
 
-	#modal-content .banner .info .little-guru .smart-guru {
+	#modal-content .modal-banner .modal-info .little-guru .smart-guru {
 		height: 200px;
 		top: -127px;
 		left: -71px;
@@ -418,25 +418,25 @@ body {
 	#modal-content {
 		top: 70px;
 	}
-	#modal-content .banner .info .little-guru svg {
+	#modal-content .modal-banner .modal-info .little-guru svg {
 		height: 160px;
 		top: -87px;
 		left: -70px;
 	}
-	#modal-content .banner .info .little-guru .smart-guru {
+	#modal-content .modal-banner .modal-info .little-guru .smart-guru {
 		height: 160px;
 		top: -87px;
 		left: -70px;
 	}
-	#modal-content .banner .info .title-text {
+	#modal-content .modal-banner .modal-info .modal-title-text {
 		font-size: 1.275em;
 		line-height: 1.275em;
 		left: 7px;
 	}
-	#modal-content .main .form-description form .columnOne {
+	#modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnOne {
 		width: 100%;
 	}
-	#modal-content .main .form-description form .columnTwo {
+	#modal-content .modal-main .modal-form-description .modal-contact-form .modal-columnTwo {
 		width: 100%;
 		p {
 			width: 100%;
@@ -449,35 +449,35 @@ body {
 			width: 20px;
 		}
 
-		.submitForm {
+		.modalSubmitForm {
 			width: 100%;
 		}
 
-		div.submitForm.getToWork {
+		div.modalSubmitForm.getToWork {
 			padding: 16px 16px 0px 0px;
 		}
 	}
 
 	/* --- success --- */
-	#modal-content .main .form-description .columnOneSuccess,
-	#modal-content .main .form-description .columnTwoSuccess {
+	#modal-content .modal-main .modal-form-description .modal-columnOneSuccess,
+	#modal-content .modal-main .modal-form-description .modal-columnTwoSuccess {
 		width: 100%;
-		.button {
+		.modal-button {
 			padding: 18px 0px 12px 12px;
 		}
 	}
 }
 
 @media only screen and (max-width: 442px) {
-	#modal-content .banner .info .success {
+	#modal-content .modal-banner .modal-info .modal-success {
 		font-size: 1.175em;
 		line-height: 1.175em;
 	}
 }
 
 @media only screen and (max-width: 424px) {
-	#modal-content .banner .info .smart,
-	#modal-content .banner .info .smart .success {
+	#modal-content .modal-banner .modal-info .smart,
+	#modal-content .modal-banner .modal-info .smart .modal-success {
 		font-size: 1.175em;
 		line-height: 1.175em;
 	}
@@ -485,12 +485,12 @@ body {
 
 @media only screen and (max-width: 395px) {
 	
-	#modal-content .banner .info .little-guru svg {
+	#modal-content .modal-banner .modal-info .little-guru svg {
 		height: 120px;
 		top: -47px;
 		left: -90px;
 	}
-	#modal-content .banner .info .little-guru .smart-guru {
+	#modal-content .modal-banner .modal-info .little-guru .smart-guru {
 		height: 120px;
 		top: -47px;
 		left: -90px;
@@ -498,7 +498,7 @@ body {
 }
 
 @media only screen and (max-width: 370px) {
-	#modal-content .banner .info .title-text {
+	#modal-content .modal-banner .modal-info .modal-title-text {
 		font-size: 0.9em;
 		line-height: 0.9em;
 		top: 10px;
