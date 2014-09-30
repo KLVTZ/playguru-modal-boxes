@@ -85,7 +85,7 @@ body {
 		left: -90px;
 	}
 
-	.smart-guru {
+	.modal-smart-guru {
 		position: absolute;
 		height: 285px;
 		z-index: 1000;
@@ -115,7 +115,7 @@ body {
 		}
 	}
 
-	.smart{
+	.modal-smart{
 		margin-top: 3px;
 		text-transform: uppercase;
 		font-size: 1.275em;
@@ -407,7 +407,7 @@ body {
 		left: -71px;
 	}
 
-	#modal-content .modal-banner .modal-info .little-guru .smart-guru {
+	#modal-content .modal-banner .modal-info .little-guru .modal-smart-guru {
 		height: 200px;
 		top: -127px;
 		left: -71px;
@@ -423,7 +423,7 @@ body {
 		top: -87px;
 		left: -70px;
 	}
-	#modal-content .modal-banner .modal-info .little-guru .smart-guru {
+	#modal-content .modal-banner .modal-info .little-guru .modal-smart-guru {
 		height: 160px;
 		top: -87px;
 		left: -70px;
@@ -476,8 +476,8 @@ body {
 }
 
 @media only screen and (max-width: 424px) {
-	#modal-content .modal-banner .modal-info .smart,
-	#modal-content .modal-banner .modal-info .smart .modal-success {
+	#modal-content .modal-banner .modal-info .modal-smart,
+	#modal-content .modal-banner .modal-info .modal-smart .modal-success {
 		font-size: 1.175em;
 		line-height: 1.175em;
 	}
@@ -490,7 +490,7 @@ body {
 		top: -47px;
 		left: -90px;
 	}
-	#modal-content .modal-banner .modal-info .little-guru .smart-guru {
+	#modal-content .modal-banner .modal-info .little-guru .modal-smart-guru {
 		height: 120px;
 		top: -47px;
 		left: -90px;
