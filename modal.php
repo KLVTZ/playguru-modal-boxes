@@ -11,8 +11,8 @@
 <body>
 	
 	<button id="modal-launcher">Price Quote Request</button>
-	<div id='modal-background' class="modal-active" <?=(!empty($_POST)) ? "class='modal-active'" : ''?>></div>
-	<div id='modal-content' class="modal-active" <?=(!empty($_POST)) ?  "class='modal-active'" : ''?>>
+	<div id='modal-background' <?=(!empty($_POST)) ? "class='modal-active'" : ''?>></div>
+	<div id='modal-content' <?=(!empty($_POST)) ?  "class='modal-active'" : ''?>>
 		<div class='modal-banner'>
 			<div class='modal-info'>
 				<div class='little-guru'>
@@ -70,7 +70,7 @@
 			experts who can do the heavy lifting while you focus on stuff that
 			really matters: achieving enlightenment. Or making dinner. Whatever
 			floats your boat.</p>
-				<form class="modal-contact-form" action="/playguru-modal-boxes/modal.php" method="post">
+				<form class="modal-contact-form" action="http://playworldsystems.dev:8080/playguru-modal-boxes/modal.php" method="post">
 					<div class='modal-columnOne'
 						<label for="fullName">What's your name?</label>
 						<input tabindex="1" type="text" name="fullName" id="fullName"
@@ -100,8 +100,8 @@
 <script>
 	$(function(){
 		// toggle modal box
-		$('#modal-launcher, #modal-background, .escape').on('click', function() {
-			$('#modal-background, #modal-content').toggleClass("active");
+		$('#modal-launcher, #modal-background, .modal-escape').on('click', function() {
+			$('#modal-background, #modal-content').toggleClass("modal-active");
 		});
 
 		// one selection per checkbox group
@@ -113,13 +113,13 @@
 		});
 
 		// onclick submit
-		$(".submitForm").on("click", function() {
-			$(".contact-form").submit();
+		$(".modalSubmitForm").on("click", function() {
+			$(".modal-contact-form").submit();
 		});
 
-		$(".submitForm").on("keypress", function(e) {
+		$(".modalSubmitForm").on("keypress", function(e) {
 			if(e.keyCode = 13) {
-				$(".contact-form").submit();
+				$(".modal-contact-form").submit();
 			}
 		});
 	});

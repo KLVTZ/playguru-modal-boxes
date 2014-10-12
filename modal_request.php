@@ -11,8 +11,8 @@
 <body>
 	
 	<button id="modal-launcher">Price Quote Request</button>
-	<div id='modal-background' class="modal-active" <?=(!empty($_POST)) ? "class='modal-active'" : ''?>></div>
-	<div id='modal-content' class="modal-active" <?=(!empty($_POST)) ?  "class='modal-active'" : ''?>>
+	<div id='modal-background' <?=(!empty($_POST)) ? "class='modal-active'" : ''?>></div>
+	<div id='modal-content' <?=(!empty($_POST)) ?  "class='modal-active'" : ''?>>
 		<div class='modal-banner'>
 			<div class='modal-info'>
 				<div class='little-guru'>
@@ -99,8 +99,8 @@ out. Send them your info and they'll get right on it!
 <script>
 	$(function(){
 		// toggle modal box
-		$('#modal-launcher, #modal-background, .escape').on('click', function() {
-			$('#modal-background, #modal-content').toggleClass("active");
+		$('#modal-launcher, #modal-background, .modal-escape').on('click', function() {
+			$('#modal-background, #modal-content').toggleClass("modal-active");
 		});
 
 		// one selection per checkbox group
@@ -112,13 +112,13 @@ out. Send them your info and they'll get right on it!
 		});
 
 		// onclick submit
-		$(".submitForm").on("click", function() {
-			$(".contact-form").submit();
+		$(".modalSubmitForm").on("click", function() {
+			$(".modal-contact-form").submit();
 		});
 
-		$(".submitForm").on("keypress", function(e) {
+		$(".modalSubmitForm").on("keypress", function(e) {
 			if(e.keyCode = 13) {
-				$(".contact-form").submit();
+				$(".modal-contact-form").submit();
 			}
 		});
 	});

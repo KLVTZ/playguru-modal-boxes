@@ -348,7 +348,7 @@ body {
       padding: 8px 36px 0px 0px; }
 
 /* --- active will display background and modal --- */
-#modal-background.active, #modal-content.active {
+#modal-background.modal-active, #modal-content.modal-active {
   display: block; }
 
 /* 
